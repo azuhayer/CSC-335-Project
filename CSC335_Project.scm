@@ -5,4 +5,4 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ; GOAL: Develop and prove the correctness of various implementations 
-; of the graph data type (Adjacency List Representation and Adjacency Matrix Representation)
+; of the Graph data type (Adjacency List Representation and Adjacency Matrix Representation)
