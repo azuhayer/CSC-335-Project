@@ -6,3 +6,7 @@
 
 ; GOAL: Develop and prove the correctness of various implementations 
 ; of the Graph data type (Adjacency List Representation and Adjacency Matrix Representation)
+
+; DEFINITION OF GRAPH: A Graph 'G' is a non-linear data structure composed of a set of 'vertices' (V)
+; and a set of 'edges' (E). The Graph G is denoted as G(V, E), V being the number of vertices and 
+; E being the number of Edges.  
