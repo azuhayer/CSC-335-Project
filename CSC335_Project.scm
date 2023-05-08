@@ -13,11 +13,13 @@
 
 ; This information suggests that we may also need data types for sets, vertices (V) and edges (E)
 
-; To help us in the process of creating data types for sets, vertices, edges and various 
-; implementations of graphs, it would be beneficial to think about the various computations
-; one would want to carry on such data types. 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-; Some suggestions for computations are:
-; Finding a path in G between vertices v1 and v2 
-; Finding a shortest path between vertices v1 and v2
+; =========================================================================================================
+; PART 2.1 - Perhaps introducing yet another data structure, design and implement an adjacency list 
+; representation of graphs. Show that the abstract algorithms you designed in Part 1.2 work for your 
+; representation.
+; =========================================================================================================
+; ----- ANSWER STARTS HERE -----
 
+; 
