@@ -40,10 +40,11 @@
 ; The basic idea of the adjacency list representation is to store the neighbors of each vertex of the 
 ; graph in a list or any other appropriate data type. 
 
+(define (make-graph)
+    '())
 
-
-
-
+(define (add-vertex graph vertex)
+    (cons (cons vertex '()) graph))
 
 
 
