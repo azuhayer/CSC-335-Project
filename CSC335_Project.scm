@@ -22,4 +22,22 @@
 ; =========================================================================================================
 ; ----- ANSWER STARTS HERE -----
 
-; 
+
+
+
+
+; ----- ANSWER ENDS HERE -----
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+; =========================================================================================================
+; PART 2.2 - Perhaps introducing yet another data structure, design and implement an adjacency matrix 
+; representation of graphs. Show that the abstract algorithms you designed in Part 1.2 work for this 
+; representation as well. 
+; =========================================================================================================
+; ----- ANSWER STARTS HERE -----
+
+
+
+
+
+; ----- ANSWER ENDS HERE -----
