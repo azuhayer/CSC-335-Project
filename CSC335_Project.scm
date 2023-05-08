@@ -2,7 +2,7 @@
 ; Final Project
 ; Group Members: Zuhayer Alvi and Anova Sarkar (Section M)
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ; GOAL: Design and implement an Adjacency list representation of graphs and an 
 ; Adjacency matrix representation of graphs using adbstract data types. 
@@ -13,13 +13,13 @@
 
 ; This information suggests that we may also need data types for sets, vertices (V) and edges (E)
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-; =========================================================================================================
-; PART 2.1 - Perhaps introducing yet another data structure, design and implement an adjacency list 
-; representation of graphs. Show that the abstract algorithms you designed in Part 1.2 work for your 
-; representation.
-; =========================================================================================================
+; ======================================================================================================== ;
+; PART 2.1 - Perhaps introducing yet another data structure, design and implement an adjacency list        ;
+; representation of graphs. Show that the abstract algorithms you designed in Part 1.2 work for your       ;
+; representation.                                                                                          ;
+; ======================================================================================================== ;
 ; ----- ANSWER STARTS HERE -----
 
 
@@ -27,13 +27,13 @@
 
 
 ; ----- ANSWER ENDS HERE -----
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-; =========================================================================================================
-; PART 2.2 - Perhaps introducing yet another data structure, design and implement an adjacency matrix 
-; representation of graphs. Show that the abstract algorithms you designed in Part 1.2 work for this 
-; representation as well. 
-; =========================================================================================================
+; ======================================================================================================== ;
+; PART 2.2 - Perhaps introducing yet another data structure, design and implement an adjacency matrix      ;
+; representation of graphs. Show that the abstract algorithms you designed in Part 1.2 work for this       ;
+; representation as well.                                                                                  ;
+; ======================================================================================================== ;
 ; ----- ANSWER STARTS HERE -----
 
 
