@@ -22,6 +22,32 @@
 ; ======================================================================================================== ;
 ; ----- ANSWER STARTS HERE -----
 
+; We know that an Adjacency List Representation of a graph data structure is a way of representing a graph 
+; by associating each vertex of the graph with a list of its neighboring vertices. 
+
+; EXAMPLE: Consider an undirected graph G, with vertices A, B, C and D
+
+; A --- B
+; |     |
+; C --- D
+
+; So, an adjacency list representation of this graph would be: 
+; |A| -> B -> C
+; |B| -> A -> D
+; |C| -> A -> D
+; |D| -> C -> B
+
+; The basic idea of the adjacency list representation is to store the neighbors of each vertex of the 
+; graph in a list or any other appropriate data type. 
+
+
+
+
+
+
+
+
+
 
 
 
