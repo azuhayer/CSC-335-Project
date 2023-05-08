@@ -32,10 +32,10 @@
 ; C --- D
 
 ; So, an adjacency list representation of this graph would be: 
-; |A| -> B -> C
-; |B| -> A -> D
-; |C| -> A -> D
-; |D| -> C -> B
+; |A| -> B -> C , because B and C are neighbors to A
+; |B| -> A -> D , because A and D are neighbors to B
+; |C| -> A -> D , because A and D are neighbors to C
+; |D| -> C -> B , because C and B are neighbors to D
 
 ; The basic idea of the adjacency list representation is to store the neighbors of each vertex of the 
 ; graph in a list or any other appropriate data type. 
