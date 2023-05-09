@@ -51,8 +51,8 @@
 (define (add-vertex graph vertex)
     (cons (cons vertex '()) graph))
 
-
-
+(define (test a b)
+    (+ a b))
 
 
 
