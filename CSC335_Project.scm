@@ -54,6 +54,9 @@
 (define (test a b)
     (+ a b))
 
+(define (test a)
+    (+ a a))
+
 
 
 
