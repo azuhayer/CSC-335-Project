@@ -19,3 +19,18 @@
 ; One such application of the stack data type would be DFS or the Depth-First Search algorithm. 
 ; The DFS algorithm does this by visiting a vertex of the graph and recursively visiting its 
 ; adjacent vertices. 
+
+; Algorithm for how a Stack works: 
+; 1. Start with an empty stack and an empty visited set
+; 2. Push the starting vertex onto the stack and mark it as visited
+; 3. While the stack is not empty:
+;       - Pop the topmost vertex from the stack
+;       - Process the vertex (e.g. print the vertex)
+;       - Retrieve all adjacent vertices of the current vertex that haven't been visited
+;       - Push each unvisited adjacent vertex onto the stack and mark them as visited
+; 4. Repeat Step 3 until the stack becomes empty
+
+; In this implementation of a Stack data type, we will be utilizing a list as our way to create 
+; an empty stack. 
+
+; We will create functions 'push', 'pop', 'top', and 'empty?' to create our stack data type.
