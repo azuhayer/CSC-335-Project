@@ -34,3 +34,20 @@
 ; an empty stack. 
 
 ; We will create functions 'push', 'pop', 'top', and 'empty?' to create our stack data type.
+
+; ---- CODE ----
+
+(define (make-stack)
+    '())
+
+(define (push stack element)
+    (cons element stack))
+
+(define (pop stack)
+    (cdr stack))
+
+(define (top stack)
+    (car stack))
+
+(define (empty? stack)
+    (null? stack))
