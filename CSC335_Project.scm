@@ -1,11 +1,6 @@
 ; CSC 33500 [Spring 2023]
 ; Final Project
 ; Group Members: Zuhayer Alvi and Anova Sarkar (Section M)
-; LastName1LastName2-project.scm - main folder for everything
-; Name folder: graph-package (submit as a .zip file)
-; another folder inside graph-package: basic-data-types (folder will contain stack.scm, queue.scm, set.scm, table.scm)
-; queue and stack need proofs that they work
-; graph-package-documentation: 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
