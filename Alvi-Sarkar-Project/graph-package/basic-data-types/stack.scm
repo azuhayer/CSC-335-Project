@@ -34,7 +34,6 @@
 
 
 ; ----- CODE -----
-
 ; In this implementation, we will be utilizing an empty list as our way to create an empty stack.
 ; An empty list will be represented as '(). 
 
