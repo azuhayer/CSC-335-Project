@@ -4,7 +4,7 @@
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-; ---- ABSTRACT ----
+; ----- ABSTRACT -----
 ; We know that a Stack is a linear data structure that follows the LAST IN FIRST OUT (LIFO) principle, 
 ; meaning that the last element that is added to a Stack would be the first element that would be removed 
 ; from the stack. 
@@ -30,21 +30,33 @@
 ;       - Push each unvisited adjacent vertex onto the stack and mark them as visited
 ; 4. Repeat Step 3 until the stack becomes empty
 
-; In this implementation of a Stack data type, we will be utilizing a list as our way to create 
-; an empty stack. 
-
 ; We will create functions 'push', 'pop', 'top', and 'empty?' to create our stack data type.
 
-; ---- CODE ----
+
+; ----- CODE -----
+
+; In this implementation, we will be utilizing an epmty list as our way to create an empty stack.
+; An empty list will be represented as '(). 
 
 (define (make-stack)
     '())
 
+; The 'push' function takes a stack and an element as parameters and returns a new stack with the element 
+; added to the top of the stack. It utlizes the primitive 'cons' procedure to combine the 
+; element into the stack. 
+
 (define (push stack element)
     (cons element stack))
 
+; The 'pop' function takes a stack as a parameter and will return a new stack with the topmost 
+; element removed from the stack. It utilizes the primitive 'cdr' procedure to remove the topmost
+; element from the stack. 
+
 (define (pop stack)
     (cdr stack))
+
+; The 'top' function takes a stack as a parameter and will return the topmost element of the 
+; stack. It utilizes the primitive 'car' procedure to retrieve the topmost element from the stack.
 
 (define (top stack)
     (car stack))
