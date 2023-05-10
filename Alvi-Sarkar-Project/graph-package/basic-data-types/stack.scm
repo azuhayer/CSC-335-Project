@@ -61,5 +61,9 @@
 (define (top stack)
     (car stack))
 
+; The 'empty?' function takes a stack as a parameter and will return #t (true) or #f (false) depending
+; on whether there are any elements  within the stack. If the stack has no elements, it will return #t.
+; If the stack has elements, it will return #f. It utlizes the primitive 'null?' procedure to check. 
+
 (define (empty? stack)
     (null? stack))
