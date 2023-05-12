@@ -35,14 +35,16 @@
 (define (make-queue)
   (cons '() '()))
 
-; The enqueue function takes a queue and an element, and returns a new queue with the element added 
-; to the rear. It does this by using the primitive 'cons' to combine the element to the rear of the queue.
+; The 'enqueue' function takes a queue and an element as parameters, and returns a new queue with the element 
+; added to the rear. It does this by using the primitive 'cons' to combine the element to the rear of the queue.
 
 (define (enqueue queue element)
   (let ((rear (cdr queue)))
     (cons (cons element (car queue)) rear)))
 
-; 
+; The dequeue function takes a queue and returns a new queue with the frontmost element removed. 
+; If the front of the queue is empty, indicating an empty queue, it returns a new empty queue. 
+; Otherwise, it removes the first element from the front of the queue by taking the cdr of the front.
 
 (define (dequeue queue)
   (let ((front (car queue))
