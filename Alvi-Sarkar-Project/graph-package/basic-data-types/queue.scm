@@ -26,3 +26,37 @@
 ;       - Get all adjacent vertices of the current vertex that have not been visited
 ;       - Enqueue each unvisited adjacent vertex into the queue and mark them as visited
 ; 4. Repeat step 3 until the queue becomes empty
+
+; ----- CODE -----
+; In this implementation, we will create the 'make-queue' function that will create an empty queue.
+; It will utilize a pair structure where the first element will represent the front of a queue and 
+; the second element will represent the back of the queue. 
+
+(define (make-queue)
+  (cons '() '()))
+
+; The enqueue function takes a queue and an element, and returns a new queue with the element added 
+; to the rear. It does this by using the primitive 'cons' to combine the element to the rear of the queue.
+
+(define (enqueue queue element)
+  (let ((rear (cdr queue)))
+    (cons (cons element (car queue)) rear)))
+
+; 
+
+(define (dequeue queue)
+  (let ((front (car queue))
+        (rear (cdr queue)))
+    (if (null? front)
+        (make-queue)
+        (cons (cdr front) rear))))
+
+; 
+
+(define (front queue)
+  (car (car queue)))
+
+; 
+
+(define (empty? queue)
+  (null? (car queue)))
