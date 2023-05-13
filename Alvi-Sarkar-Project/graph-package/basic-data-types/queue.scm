@@ -64,3 +64,23 @@
 
 (define (empty? queue)
   (null? (car queue)))
+
+
+; ---------------------------------------------------- ;
+; Now for some computations with this Stack data type: ;
+; ---------------------------------------------------- ;
+
+; Make an empty stack by the name stack0 
+(define stack0 (make-stack)) 
+
+; Create another stack named stack1 which will call the 'push' function and take the
+; original empty stack, stack0, and an element, '1, as parameters. 
+; Will return (1)
+(define stack1 (push stack0 '1))
+
+; Do the same with another stack named stack2
+(define stack2 (push stack1 '2))
+
+; Pop an element from stack2 by defining another stack, stack3
+(define stack3 (pop stack2))
+
