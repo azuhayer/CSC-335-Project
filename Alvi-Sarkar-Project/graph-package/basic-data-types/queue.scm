@@ -42,9 +42,9 @@
   (let ((rear (cdr queue)))
     (cons (cons element (car queue)) rear)))
 
-; The dequeue function takes a queue and returns a new queue with the frontmost element removed. 
+; The 'dequeue' function takes a queue and returns a new queue with the frontmost element removed. 
 ; If the front of the queue is empty, indicating an empty queue, it returns a new empty queue. 
-; Otherwise, it removes the first element from the front of the queue by taking the cdr of the front.
+; Otherwise, it removes the first element from the front of the queue by taking the 'cdr' of the front.
 
 (define (dequeue queue)
   (let ((front (car queue))
@@ -53,12 +53,13 @@
         (make-queue)
         (cons (cdr front) rear))))
 
-; 
+; The 'front' function returns the frontmost element of the queue without modifying the queue itself. 
+; It accesses the first element of the front using the primitive 'car'.
 
 (define (front queue)
   (car (car queue)))
 
-; 
+; The 'empty?'' function checks if the queue is empty by checking if the front of the queue is null.
 
 (define (empty? queue)
   (null? (car queue)))
