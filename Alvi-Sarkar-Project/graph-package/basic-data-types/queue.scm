@@ -65,3 +65,18 @@
   (null? queue))
 
 
+; ---------------------------------------------------- ;
+; Now for some computations with this Queue data type: ;
+; ---------------------------------------------------- ;
+
+(define q0 (make-queue))
+
+(define q1 (enqueue q0 '1))
+(define q2 (enqueue q1 '2))
+(define q3 (enqueue q2 '3))
+
+(define q4 (dequeue q3))
+
+(define q5 (front q4))
+
+
