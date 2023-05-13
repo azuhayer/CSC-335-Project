@@ -86,3 +86,12 @@
 ; Pop the first element from stack2 by defining another stack, stack3
 ; Will return (1)
 (define stack3 (pop stack2))
+
+; Add more elements to the stack 
+; Will return (5 4 1)
+(define stack4 (push stack3 '4))
+(define stack5 (push stack4 '5))
+
+; Retrieve the topmost element from the stack
+; Will return 5
+(define stack6 (top stack5))
