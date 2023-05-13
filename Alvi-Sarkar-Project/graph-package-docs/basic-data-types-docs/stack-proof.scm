@@ -6,7 +6,7 @@
 
 ; Structural Induction Proof for Stacks.scm
 
-; Base Case:
+; Base Case: 
 
 ; Inductive Step: 
 
