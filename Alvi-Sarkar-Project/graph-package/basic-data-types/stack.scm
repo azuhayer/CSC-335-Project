@@ -67,6 +67,7 @@
 (define (empty? stack)
     (null? stack))
 
+
 ; ---------------------------------------------------- ;
 ; Now for some computations with this Stack data type: ;
 ; ---------------------------------------------------- ;
