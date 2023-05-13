@@ -80,7 +80,9 @@
 (define stack1 (push stack0 '1))
 
 ; Do the same with another stack named stack2
+; Will return (2 1)
 (define stack2 (push stack1 '2))
 
-; Pop an element from stack2 by defining another stack, stack3
+; Pop the first element from stack2 by defining another stack, stack3
+; Will return (1)
 (define stack3 (pop stack2))
