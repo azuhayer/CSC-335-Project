@@ -27,6 +27,7 @@
 ;       - Enqueue each unvisited adjacent vertex into the queue and mark them as visited
 ; 4. Repeat step 3 until the queue becomes empty
 
+
 ; ----- CODE -----
 ; In this implementation, we will create the 'make-queue' function that will create an empty queue.
 ; It will utilize a pair structure where the first element will represent the front of a queue and 
