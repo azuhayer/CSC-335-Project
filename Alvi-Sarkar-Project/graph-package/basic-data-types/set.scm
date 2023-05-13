@@ -15,10 +15,5 @@
 
 
 ; ----- CODE -----
-; In this implementation, we will represent a set as a list where each element appears only once. 
-; The 'make-set' function will create an empty list by using '().
 
-(define (make-set)
-    '())
 
-; 
