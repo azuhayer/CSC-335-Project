@@ -13,6 +13,9 @@
 ; By utilizing the set data type in graphs, it would allow for graph algorithms to process and 
 ; manage graph information, which would allow for various set operations for graphs. 
 
+; Set operations such as finding the union of two sets or finding the intersection of two sets 
+; are examples of what we can do with sets. 
+
 
 ; ----- CODE -----
 
