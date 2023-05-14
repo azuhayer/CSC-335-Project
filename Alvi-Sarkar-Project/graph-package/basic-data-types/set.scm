@@ -17,22 +17,33 @@
 ; are examples of what we can do with sets. 
 
 
-; ----- CODE ----- [WIP]
-; In this implementation we will use the function 'empty-set' to create an an empty set.
+; ----- CODE ----- 
+; In this implementation we will use the function 'empty-set' to create an an empty set using '().
+
 (define (empty-set)
   '())
 
-; The function 'set-empty?' 
+; The function 'set-empty?' will check to see if any set is empty or not.
+
 (define (set-empty? set)
   (null? set))
 
+; The function 'set-member?' takes two parameters, a set and an element, and checks to see if a 
+; specific element is within a given set.
+
 (define (set-member? set element)
   (memq element set))
+
+; The function 'set-add' takes two parameters, a set and an element, and combines the element 
+; into the set. 
 
 (define (set-add set element)
   (if (set-member? set element)
       set
       (cons element set)))
+
+; The function 'set-remove' takes two parameters, a set and an element, and removes the element 
+; from the set. 
 
 (define (set-remove set element)
   (if (set-empty? set)
@@ -40,6 +51,9 @@
       (if (equal? (car set) element)
           (cdr set)
           (cons (car set) (set-remove (cdr set) element)))))
+
+; The function 'set-union' takes two parameters, both of which are sets, and will return the 
+; union of both sets. 
 
 (define (set-union set1 set2)
   (cond ((set-empty? set1) set2)
