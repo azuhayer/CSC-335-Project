@@ -57,7 +57,9 @@
 (define (get-column table index)
   (map (lambda (row) (list-ref row index)) table))
 
-; Update a value at a specific row and column index
+; The function 'update-value' will update a specific value of the table given a 
+; column index and a row index. 
+
 (define (update-value table row-index column-index new-value)
   (let ((old-row (get-row table row-index)))
     (let ((new-row (list-copy old-row)))
