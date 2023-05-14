@@ -45,11 +45,15 @@
 (define (get-row table index)
   (list-ref table index))
 
-; Add a column to all rows in the table
+; The function 'add-column' takes a table and a column as parameters and 
+; adds a column to the table. 
+
 (define (add-column table column)
   (map (lambda (row) (cons column row)) table))
 
-; Get a specific column by index
+; The function 'get-column' take two parameters, a table and an index and will return 
+; a specific column of the table given an index. 
+
 (define (get-column table index)
   (map (lambda (row) (list-ref row index)) table))
 
