@@ -43,7 +43,7 @@
       (cons element set)))
 
 ; The function 'set-remove' takes two parameters, a set and an element, and removes the element 
-; from the set. 
+; from the set by recursively traversing the set. 
 
 (define (set-remove set element)
   (if (set-empty? set)
@@ -53,12 +53,17 @@
           (cons (car set) (set-remove (cdr set) element)))))
 
 ; The function 'set-union' takes two parameters, both of which are sets, and will return the 
-; union of both sets. 
+; union of both sets. This function computes the union by recursively adding each element of
+; first to the second set by using the 'set-add' function. 
 
 (define (set-union set1 set2)
   (cond ((set-empty? set1) set2)
         ((set-empty? set2) set1)
         (else (set-union (set-add (cdr set1) (car set1)) set2))))
+
+; The function 'set-interaction' takes two parameters, both of which are sets, and will return 
+; the intersection of both sets. This function computes the intersection by recursively checking 
+; if each element of the first set is present within the second set. 
 
 (define (set-intersection set1 set2)
   (cond ((set-empty? set1) '())
