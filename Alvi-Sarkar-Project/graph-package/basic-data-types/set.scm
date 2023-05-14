@@ -17,7 +17,7 @@
 ; are examples of what we can do with sets. 
 
 
-; ----- CODE -----
+; ----- CODE ----- [WIP]
 ; In this implementation we will use the function 'empty-set' to create an an empty set.
 (define (empty-set)
   '())
