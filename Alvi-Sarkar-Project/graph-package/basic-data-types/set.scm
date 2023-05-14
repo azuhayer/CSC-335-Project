@@ -58,8 +58,9 @@
 
 (define (set-union set1 set2)
   (cond ((set-empty? set1) set2)
-        ((set-empty? set2) set1)
-        (else (set-union (set-add (cdr set1) (car set1)) set2))))
+        ((set-member? set2 (car set1))
+         (set-union (cdr set1) set2))
+        (else (set-union (cdr set1) (set-add set2 (car set1))))))
 
 ; The function 'set-interaction' takes two parameters, both of which are sets, and will return 
 ; the intersection of both sets. This function computes the intersection by recursively checking 
