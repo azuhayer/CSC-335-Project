@@ -18,36 +18,42 @@
 
 
 ; ----- CODE -----
+; In this implementation, we will use function 'make-table' to create an empty table 
+; with no rows. 
 
-;; Define a table as a list of rows
 (define (make-table)
   '())
 
-;; Add a row to the table
+; The function 'add-row' will take two parameters, a table and a row, and insert a new row 
+; to the table. 
+
 (define (add-row table row)
   (cons row table))
 
-;; Get all rows in the table
+; The function 'get-rows' will return all the rows of the table.
+
 (define (get-rows table)
   table)
 
-;; Get the number of rows in the table
+; The function 'num-rows' will return the number of rows in the table.
+
 (define (num-rows table)
   (length table))
 
-;; Get a specific row by index
+; The function 'get-row' will return a specific row of the table given an index. 
+
 (define (get-row table index)
   (list-ref table index))
 
-;; Add a column to all rows in the table
+; Add a column to all rows in the table
 (define (add-column table column)
   (map (lambda (row) (cons column row)) table))
 
-;; Get a specific column by index
+; Get a specific column by index
 (define (get-column table index)
   (map (lambda (row) (list-ref row index)) table))
 
-;; Update a value at a specific row and column index
+; Update a value at a specific row and column index
 (define (update-value table row-index column-index new-value)
   (let ((old-row (get-row table row-index)))
     (let ((new-row (list-copy old-row)))
