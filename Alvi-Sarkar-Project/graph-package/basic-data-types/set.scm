@@ -18,11 +18,11 @@
 
 
 ; ----- CODE -----
-
-; WORK IN PROGRESS ;
+; In this implementation we will use the function 'empty-set' to create an an empty set.
 (define (empty-set)
   '())
 
+; The function 'set-empty?' 
 (define (set-empty? set)
   (null? set))
 
