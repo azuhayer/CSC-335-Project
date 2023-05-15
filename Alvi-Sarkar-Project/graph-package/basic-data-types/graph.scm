@@ -27,6 +27,9 @@
 ; data structure. In this representation, each vertex of the graph is associated with a 
 ; list of its neighboring vertices. This list of neighbors is called the adjacency list. 
 
+; For an undirected graph (we will be implementing for this), the adjacency list will 
+; have all the vertices that share an edge with a specific vertex. 
+
 
 
 
