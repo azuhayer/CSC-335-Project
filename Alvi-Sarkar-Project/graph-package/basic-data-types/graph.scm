@@ -41,3 +41,7 @@
 ; --------------------------------------------------------------------------------------- ;
 ;                           Adjacency Matrix Representation:                              ;
 ; --------------------------------------------------------------------------------------- ;
+
+; An adjacency matrix representation is the second common way to represent a graph data
+; structure. It is a way of representing a graph using a matrix of any size n x n, where 
+; n is the number of vertices of the graph. 
