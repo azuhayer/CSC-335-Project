@@ -13,5 +13,5 @@
 ; weighted graphs (where edges have 'weights' or assigned values to them). 
 
 ; Along with these different graph data structures, there are also various ways to implement a graph 
-; data type. Such implementations include are: adjacency list representation, and adjacency matrix 
+; data type. Two such implementations are: adjacency list representation, and adjacency matrix 
 ; representation.  
