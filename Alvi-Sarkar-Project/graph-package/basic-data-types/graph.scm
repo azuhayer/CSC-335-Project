@@ -45,3 +45,12 @@
 ; An adjacency matrix representation is the second common way to represent a graph data
 ; structure. It is a way of representing a graph using a matrix of any size n x n, where 
 ; n is the number of vertices of the graph. 
+
+; In the adjacency matrix representation, each cell of the matrix represents an edge 
+; between two vertices. The value stored in the cell indicates whether an edge exists
+; or not. Usually a value of '1' will indicate that there exists such an edge and a value 
+; of '0' if there isnt an edge. 
+
+; For an udirected graph, the adjacency matrix would be symmetric since the presence or 
+; absence of an edge between, lets say, between vertex A and vertex B is the same 
+; between vertex B and vertex A. 
