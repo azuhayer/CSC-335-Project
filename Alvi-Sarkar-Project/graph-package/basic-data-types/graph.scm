@@ -23,7 +23,9 @@
 ;                           Adjacency List Representation:                                ;
 ; --------------------------------------------------------------------------------------- ;
 
-; An adjacency list representation is one of the common ways to 
+; An adjacency list representation is one of the two common ways to represent a graph 
+; data structure. In this representation, each vertex of the graph is associated with a 
+; list of its neighboring vertices. This list of neighbors is called the adjacency list. 
 
 
 
