@@ -4,10 +4,41 @@
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-; Structural Induction Proof for Stacks.scm
+; ---------------------- ;
+;      'make-stack'      ;
+; ---------------------- ;
+; Precondition: 
 
-; Base Case: 
+; Postcondition: 
 
-; Inductive Step: 
 
-; 
+; ---------------------- ;
+;         'push'         ;
+; ---------------------- ;
+; Precondition: 
+
+; Postcondition:
+
+
+; ---------------------- ;
+;         'pop'          ;
+; ---------------------- ;
+; Precondition: 
+
+; Postcondition:
+
+
+; ---------------------- ;
+;         'top'          ;
+; ---------------------- ;
+; Precondition: 
+
+; Postcondition:
+
+
+; ---------------------- ;
+;        'empty?'        ;
+; ---------------------- ;
+; Precondition: 
+
+; Postcondition:
