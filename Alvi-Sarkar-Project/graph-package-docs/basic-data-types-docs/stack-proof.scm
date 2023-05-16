@@ -35,17 +35,17 @@
 ; ---------------------- ;
 ;         'top'          ;
 ; ---------------------- ;
-; Precondition: The function 'top' will take one parameter: a stack. The stack has to have atleast
-; one element in it. 
+; Precondition: Takes a nonempty list as a stack parameter, as there cannot be 
+; a top element if there are no elements to begin with in the list.
 
-; Postcondition: The top element of the stack is returned without any modifications to the stack. 
+; Postcondition: Returns the top of the stack, which is the first element of the 
+; list.
 
 
 ; ---------------------- ;
 ;        'empty?'        ;
 ; ---------------------- ;
-; Precondition: The function 'empty?' will take one parameter: a stack. The stack could either have
-; no elements or many elements. 
+; Precondition: Takes a list as a stack parameter (can be empty or nonempty).
 
-; Postcondition: If the stack is empty it will return #t, if the stack is not empty it will return 
-; #f. 
+; Postcondition: Returns true if list is has no elements in it (empty). Returns false
+; otherwise (nonempty).
