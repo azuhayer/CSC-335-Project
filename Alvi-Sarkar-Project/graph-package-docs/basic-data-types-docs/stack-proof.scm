@@ -33,7 +33,8 @@
 ; ---------------------- ;
 ;         'top'          ;
 ; ---------------------- ;
-; Precondition: 
+; Precondition: Takes a nonempty list as a stack parameter, as there cannot be 
+; a top element if there are no elements to begin with in the list.
 
 ; Postcondition:
 
