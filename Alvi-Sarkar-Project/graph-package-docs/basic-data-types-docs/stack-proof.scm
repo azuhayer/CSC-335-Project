@@ -25,22 +25,27 @@
 ; ---------------------- ;
 ;         'pop'          ;
 ; ---------------------- ;
-; Precondition: 
+; Precondition: The function 'pop' will take one parameter: a stack. The stack has to have atleast 
+; one element in it for it to be removed from the stack. 
 
-; Postcondition:
+; Postcondition: The new stack is modified by removing the topmost element and returning the newly 
+; modified stack. 
 
 
 ; ---------------------- ;
 ;         'top'          ;
 ; ---------------------- ;
-; Precondition: 
+; Precondition: The function 'top' will take one parameter: a stack. The stack has to have atleast
+; one element in it. 
 
-; Postcondition:
+; Postcondition: The top element of the stack is returned without any modifications to the stack. 
 
 
 ; ---------------------- ;
 ;        'empty?'        ;
 ; ---------------------- ;
-; Precondition: 
+; Precondition: The function 'empty?' will take one parameter: a stack. The stack could either have
+; no elements or many elements. 
 
-; Postcondition:
+; Postcondition: If the stack is empty it will return #t, if the stack is not empty it will return 
+; #f. 
