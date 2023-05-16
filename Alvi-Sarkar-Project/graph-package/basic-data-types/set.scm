@@ -32,7 +32,9 @@
 ; specific element is within a given set.
 
 (define (set-member? set element)
-  (memq element set))
+  (cond ((set-empty? set) #f)
+        ((equal? (car set) element) #t)
+        (else (set-member? (cdr set) element))))
 
 ; The function 'set-add' takes two parameters, a set and an element, and combines the element 
 ; into the set. 
