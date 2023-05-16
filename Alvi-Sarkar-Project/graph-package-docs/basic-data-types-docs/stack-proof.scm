@@ -7,17 +7,19 @@
 ; ---------------------- ;
 ;      'make-stack'      ;
 ; ---------------------- ;
-; Precondition: 
+; Precondition: No explicit precondition needed for creating a stack. 
 
-; Postcondition: 
+; Postcondition: Creating a new stack will return an empty list: ().
 
 
 ; ---------------------- ;
 ;         'push'         ;
 ; ---------------------- ;
-; Precondition: 
+; Precondition: The function 'push' will take two parameters: a stack and an element. There are 
+; no specific limitations or restrictions as to what element one would like to push into a 
+; stack.
 
-; Postcondition:
+; Postcondition: The new stack is modified to include the newly added element at the top. 
 
 
 ; ---------------------- ;
