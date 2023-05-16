@@ -36,12 +36,13 @@
 ; Precondition: Takes a nonempty list as a stack parameter, as there cannot be 
 ; a top element if there are no elements to begin with in the list.
 
-; Postcondition:
+; Postcondition: 
 
 
 ; ---------------------- ;
 ;        'empty?'        ;
 ; ---------------------- ;
-; Precondition: 
+; Precondition: Takes a list as a stack parameter (can be empty or nonempty).
 
-; Postcondition:
+; Postcondition: Returns true if list is has no elements in it. Returns false
+; otherwise.
