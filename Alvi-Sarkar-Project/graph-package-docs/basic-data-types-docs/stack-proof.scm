@@ -36,7 +36,8 @@
 ; Precondition: Takes a nonempty list as a stack parameter, as there cannot be 
 ; a top element if there are no elements to begin with in the list.
 
-; Postcondition: 
+; Postcondition: Returns the top of the stack, which is the first element of the 
+; list.
 
 
 ; ---------------------- ;
