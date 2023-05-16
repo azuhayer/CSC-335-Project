@@ -7,17 +7,19 @@
 ; ---------------------- ;
 ;      'empty-set'       ;
 ; ---------------------- ;
-; Precondition: 
+; Precondition: No explicit precondition needed to create a set.
 
-; Postcondition:
+; Postcondition: Creating a new set will return an empty set: (). 
 
 
 ; ---------------------- ;
 ;      'set-empty?'      ;
 ; ---------------------- ;
-; Precondition: 
+; Precondition: The function 'set-empty?' takes one parameter: a set. This set can either 
+; be empty or nonempty. 
 
-; Postcondition:
+; Postcondition: Will return true (#t) or false (#f) depending if the set is empty or 
+; not. If it is empty the function will return #t, if not then #f. 
 
 
 ; ---------------------- ;
