@@ -47,5 +47,5 @@
 ; ---------------------- ;
 ; Precondition: Takes a list as a stack parameter (can be empty or nonempty).
 
-; Postcondition: Returns true if list is has no elements in it (empty). Returns false
+; Postcondition: Returns true (#t) if list is has no elements in it (empty). Returns false (#f)
 ; otherwise (nonempty).
