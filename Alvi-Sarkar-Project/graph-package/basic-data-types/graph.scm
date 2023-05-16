@@ -52,5 +52,5 @@
 ; of '0' if there isnt an edge. 
 
 ; For an udirected graph, the adjacency matrix would be symmetric since the presence or 
-; absence of an edge between, lets say, between vertex A and vertex B is the same 
+; absence of an edge between, lets say, vertex A and vertex B is the same 
 ; between vertex B and vertex A. 
