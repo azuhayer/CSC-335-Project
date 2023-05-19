@@ -33,14 +33,15 @@
 ; ---------------------- ;
 ;        'front'         ;
 ; ---------------------- ;
-; Precondition: 
+; Precondition: Function takes a nonempty queue as a parameter.
 
-; Postcondition: 
+; Postcondition: Will return the frontmost element within the queue.
 
 
 ; ---------------------- ;
 ;        'empty?'        ;
 ; ---------------------- ;
-; Precondition: 
+; Precondition: Function takes a queue as a parameter. 
 
-; Postcondition: 
+; Postcondition: Will return true (#t) or false (#f) depending if the queue is 
+; empty or not. 
