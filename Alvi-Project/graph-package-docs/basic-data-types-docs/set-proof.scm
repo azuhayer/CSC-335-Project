@@ -77,7 +77,11 @@
 ;      of the set.
 ;   3. Otherwise, it recursively calls 'set-remove' on the rest of the set
 
-; Base Case: 
+; Base Case: When the set is empty, the function will return the empty set. Thus the base case holds. 
+
+; Since the base case holds and the inductive step shows that if the cases hold for a set of size 'n'
+; then it will definitely hold for a set of size 'n + 1', thus we can conclude that the 'set-remove' 
+; function correctly removes an element from any set. 
 
 
 ; ---------------------- ;
