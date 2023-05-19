@@ -110,12 +110,14 @@
 ; ---------------------- ;
 ;   'set-intersection'   ;
 ; ---------------------- ;
-; Precondition: 
+; Precondition: The function 'set-intersection' takes two nonempty sets as parameters.
 
-; Postcondition:
+; Postcondition: The function will return the intersection of both sets. 
 
-; Inductive Hypothesis: 
+; Inductive Hypothesis: Assuming that the 'set-intersection' function works correctly for sets 
+; 'set1' and 'set2' of sizes 'n1' and 'n2' respectively, then this function will also work for sets 
+; of sizes 'n1 + 1' and 'n2 + 1' respectively. 
 
-; Inductive Step:
+; Inductive Step: 
 
 ; Base Case:
