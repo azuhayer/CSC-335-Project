@@ -53,15 +53,15 @@
 ; ---------------------- ;
 ;       'set-add'        ;
 ; ---------------------- ;
-; Precondition: 
+; Precondition: The 'set-add' function takes two parameters: a nonempty set and an element. 
 
-; Postcondition:
+; Postcondition: The function will return a nonempty set with the element combined within it. 
 
 
 ; ---------------------- ;
 ;      'set-remove'      ;
 ; ---------------------- ;
-; Precondition: 
+; Precondition: The funtion 'set-remove' 
 
 ; Postcondition:
 
