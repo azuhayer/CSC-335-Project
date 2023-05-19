@@ -72,7 +72,7 @@
 
 ; Inductive Step: By assuming the correctness of the function for sets of size 'n', we can also
 ; demonstrate that this function works correctly for sets of size 'n + 1' by following these 3 cases:
-;   1. If the set is empty, the function will return the set itself
+;   1. If the set is empty, the function will return the set itself.
 ;   2. If the first element of the set is equal to the target element, function will return the rest 
 ;      of the set.
 ;   3. Otherwise, it recursively calls 'set-remove' on the rest of the set
@@ -87,15 +87,24 @@
 ; ---------------------- ;
 ;      'set-union'       ;
 ; ---------------------- ;
-; Precondition: 
+; Precondition: The function 'set-union' takes two nonempty sets as parameters. 
 
-; Postcondition:
+; Postcondition: The function will return the union of both sets. 
 
-; Inductive Hypothesis: 
+; Inductive Hypothesis: Assuming that the 'set-union' function works correctly for sets 'set1' and 
+; 'set2' of sizes 'n1' and 'n2' respectively, then this function will also work for sets of sizes 
+; 'n1 + 1' and 'n2 + 1' respectively. 
 
-; Inductive Step:
+; Inductive Step: By assuming the correctness of the function for two sets of size 'n1' and 'n2', we can also
+; demonstrate that this function works correctly for two sets of size 'n1 + 1' and 'n2 + 1' by following these 
+; 3 cases: 
+;   1. If 'set1' is empty, the function return 'set2'.
+;   2. If the first element of 'set1' is a member of 'set2', it recursively calls 'set-union' on the 
+;      rest of 'set1' and 'set2'.
+;   3. Otherwise, it recursively calls 'set-union' on the rest of 'set1' and adds the first element 
+;      of 'set1' to 'set2' using the set-add function.
 
-; Base Case:
+; Base Case: When 'set1' is empty, the function returns 'set2'. Thus the base case holds. 
 
 
 ; ---------------------- ;
