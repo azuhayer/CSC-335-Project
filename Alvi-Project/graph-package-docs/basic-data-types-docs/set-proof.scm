@@ -47,7 +47,8 @@
 
 ; Since the base case holds and the inductive step shows that if these cases hold for a set of 
 ; size 'n', then it must hold for a set of size 'n + 1', and thus we could conclude that the 
-; 'set-member?' function will correctly determine membership of all elements within a set. 
+; 'set-member?' function will correctly determine membership of all elements within a set,
+; given a specific element. 
 
 
 ; ---------------------- ;
@@ -61,9 +62,16 @@
 ; ---------------------- ;
 ;      'set-remove'      ;
 ; ---------------------- ;
-; Precondition: The funtion 'set-remove' 
+; Precondition: The funtion 'set-remove' takes two parameters: a nonempty set and an element. 
 
-; Postcondition:
+; Postcondition: The function will return a newly updated set with the given element removed
+; from the original set. 
+
+; Inductive Hypothesis: 
+
+; Inductive Step:
+
+; Base Case: 
 
 
 ; ---------------------- ;
@@ -73,6 +81,12 @@
 
 ; Postcondition:
 
+; Inductive Hypothesis: 
+
+; Inductive Step:
+
+; Base Case:
+
 
 ; ---------------------- ;
 ;   'set-intersection'   ;
@@ -80,3 +94,9 @@
 ; Precondition: 
 
 ; Postcondition:
+
+; Inductive Hypothesis: 
+
+; Inductive Step:
+
+; Base Case:
