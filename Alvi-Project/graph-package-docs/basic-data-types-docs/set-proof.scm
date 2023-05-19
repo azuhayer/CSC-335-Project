@@ -106,6 +106,10 @@
 
 ; Base Case: When 'set1' is empty, the function returns 'set2'. Thus the base case holds. 
 
+; Since the base case holds and the inductive step shows that if the cases hold for a sets of size 'n1'
+; and 'n2' then it will definitely hold for a sets of size 'n1 + 1' and 'n2 +1', thus we can conclude 
+; that the 'set-union' function correctly returns the union of two sets.
+
 
 ; ---------------------- ;
 ;   'set-intersection'   ;
@@ -127,3 +131,7 @@
 ;   3. Otherwise, it recursively calls set-intersection on the rest of 'set1' and 'set2'.
 
 ; Base Case: When 'set1' is empty, the function returns the empty set. Thus the base case holds. 
+
+; Since the base case holds and the inductive step shows that if the cases hold for a sets of size 'n1'
+; and 'n2' then it will definitely hold for a sets of size 'n1 + 1' and 'n2 +1', thus we can conclude 
+; that the 'set-intersection' function correctly returns the intersection of two sets. 
