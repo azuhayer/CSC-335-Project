@@ -118,6 +118,12 @@
 ; 'set1' and 'set2' of sizes 'n1' and 'n2' respectively, then this function will also work for sets 
 ; of sizes 'n1 + 1' and 'n2 + 1' respectively. 
 
-; Inductive Step: 
+; Inductive Step: By assuming the correctness of the function for two sets of size 'n1' and 'n2', we can also
+; demonstrate that this function works correctly for two sets of size 'n1 + 1' and 'n2 + 1' by following these 
+; 3 cases: 
+;   1. If 'set1' is empty, the function returns the empty set.
+;   2. If the first element of 'set1' is a member of 'set2', it recursively calls set-intersection 
+;      on the rest of 'set1' and 'set2', and cons the first element to the result.
+;   3. Otherwise, it recursively calls set-intersection on the rest of 'set1' and 'set2'.
 
-; Base Case:
+; Base Case: When 'set1' is empty, the function returns the empty set. Thus the base case holds. 
