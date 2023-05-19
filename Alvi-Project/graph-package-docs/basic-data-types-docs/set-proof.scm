@@ -67,9 +67,15 @@
 ; Postcondition: The function will return a newly updated set with the given element removed
 ; from the original set. 
 
-; Inductive Hypothesis: 
+; Inductive Hypothesis: Assuming the 'set-remove' function works correctly for a set of size 'n'
+; elements, we want to show that this function works correctly for a set of size 'n + 1' elements. 
 
-; Inductive Step:
+; Inductive Step: By assuming the correctness of the function for sets of size 'n', we can also
+; demonstrate that this function works correctly for sets of size 'n + 1' by following these 3 cases:
+;   1. If the set is empty, the function will return the set itself
+;   2. If the first element of the set is equal to the target element, function will return the rest 
+;      of the set.
+;   3. Otherwise, it recursively calls 'set-remove' on the rest of the set
 
 ; Base Case: 
 
