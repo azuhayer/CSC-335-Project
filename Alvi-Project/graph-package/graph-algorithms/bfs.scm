@@ -7,3 +7,6 @@
 ; Load queue.scm from basic-data-types folder
 ; This is necessary since BFS will require the queue data type
 (load "basic-data-types/queue.scm")
+
+; ----- ABSTRACT -----
+; 
