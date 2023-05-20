@@ -36,27 +36,28 @@
 ; ---------------------- ;
 ;       'get-row'        ;
 ; ---------------------- ;
-; Precondition: The function will take a nonempty table and an index as a parameter. 
+; Precondition: The function will take a nonempty table and an index as parameters. 
 
-; Postcondition: 
+; Postcondition: Will return the row of the table given the index for it. 
 
 ; ---------------------- ;
 ;      'add-column'      ;
 ; ---------------------- ;
-; Precondition: 
+; Precondition: The function will take a table and column as parameters. 
 
-; Postcondition: 
+; Postcondition: Will return a table with the added column into it. 
 
 ; ---------------------- ;
 ;      'get-column'      ;
 ; ---------------------- ;
-; Precondition: 
-
-; Postcondition: 
+; Precondition: The function will take a table and an index as parameters. 
+ 
+; Postcondition: Will return a specific column of the table given an index.  
 
 ; ---------------------- ;
 ;     'update-value'     ;
 ; ---------------------- ;
-; Precondition: 
+; Precondition: The function will take a nonempty table, a row index, a column index and 
+; a new-value  
 
 ; Postcondition: 

@@ -65,3 +65,25 @@
   (null? queue))
 
 
+; ---------------------------------------------------- ;
+; Now for some computations with this Queue data type: ;
+; ---------------------------------------------------- ;
+
+; Make an empty queue by the name 'q0'
+(define q0 (make-queue))
+
+; Enqueue elements into the empty queue by creating more queue objects
+; This will return (1 2 3)
+(define q1 (enqueue q0 '1))
+(define q2 (enqueue q1 '2))
+(define q3 (enqueue q2 '3))
+
+; Dequeue the frontmost element from q3
+; This will return (2 3)
+(define q4 (dequeue q3))
+
+; Using the function 'front' we can see what the frontmost element is now 
+; This will return 2
+(define q5 (front q4))
+
+
