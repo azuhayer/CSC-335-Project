@@ -4,9 +4,10 @@
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-; Load set.scm from basic-data-types folder
-; This is necessary since our graph implementations will require the set data type
+; Load set.scm and table.scm from basic-data-types folder
+; This is necessary since our graph implementations will require the set data type and table data type
 (load "basic-data-types/set.scm")
+(load "basic-data-types/table.scm")
 
 ; ----- ABSTRACT -----
 ; A graph in computer programming represents a collection of interconnected nodes or commonly known as
