@@ -107,11 +107,20 @@
         (cdr adjacency-list)
         '())))
 
+; The get-vertices function is used to retrieve all the vertices present in a graph. It takes an 
+; existing graph as input and returns a list of all the vertices.
+
 (define (get-vertices graph)
   (map car graph))
 
+; The graph-size function is used to determine the number of vertices in a graph. It takes an existing 
+; graph as input and returns the count of vertices in the graph.
+
 (define (graph-size graph)
   (length graph))
+
+; The custom-filter function takes a predicate pred and a list lst as input and returns a new list 
+; that contains only the elements of lst for which pred returns true.
 
 (define (custom-filter pred lst)
   (cond ((null? lst) '())
@@ -130,11 +139,6 @@
 (define graph5 (add-edge graph4 'A 'C))
 
 
-
-
-
-
-
 ; --------------------------------------------------------------------------------------- ;
 ;                           Adjacency Matrix Representation:                              ;
 ; --------------------------------------------------------------------------------------- ;
@@ -151,3 +155,4 @@
 ; For an udirected graph, the adjacency matrix would be symmetric since the presence or 
 ; absence of an edge between, lets say, vertex A and vertex B is the same 
 ; between vertex B and vertex A. 
+
