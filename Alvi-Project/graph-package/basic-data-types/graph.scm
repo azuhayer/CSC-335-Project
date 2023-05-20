@@ -4,9 +4,9 @@
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-(load "basic-data-types/stack.scm")
+; Load set.scm from basic-data-types folder
+; This is necessary since our graph implementations will require the set data type
 (load "basic-data-types/set.scm")
-(load "basic-data-types/queue.scm")
 
 ; ----- ABSTRACT -----
 ; A graph in computer programming represents a collection of interconnected nodes or commonly known as
@@ -34,6 +34,47 @@
 ; For an undirected graph (we will be implementing for this), the adjacency list will 
 ; have all the vertices that share an edge with a specific vertex. 
 
+(define (make-graph)
+  (let ((adjacency-list (empty-set)))
+
+;; Function to add an edge between two vertices
+(define (add-edge vertex1 vertex2)
+    (let ((vertex1-entry (set-member? adjacency-list vertex1))
+        (vertex2-entry (set-member? adjacency-list vertex2)))
+    (if (and vertex1-entry vertex2-entry)
+        (let* ((neighbors1 (cdr vertex1-entry))
+                (neighbors2 (cdr vertex2-entry)))
+            (set-union (set-remove adjacency-list vertex1-entry)
+                        (set-remove adjacency-list vertex2-entry)
+                        (set-add adjacency-list (cons vertex1 (set-add neighbors1 vertex2))))
+            (set-add adjacency-list (cons vertex2 (set-add neighbors2 vertex1)))))
+        adjacency-list))
+    
+;; Function to add a vertex to the graph
+(define (add-vertex vertex)
+    (if (set-member? adjacency-list vertex)
+        adjacency-list
+        (set-add adjacency-list (cons vertex (empty-set)))))
+
+;; Function to get the neighbors of a vertex
+(define (neighbors vertex)
+    (let ((vertex-entry (set-member? adjacency-list vertex)))
+    (if vertex-entry (cdr vertex-entry) (empty-set))))
+
+;; Function to get all vertices in the graph
+(define (get-vertices)
+    (map car adjacency-list))
+
+;; Function to get all edges in the graph
+(define (get-edges)
+  (letrec ((helper (lambda (graph edges)
+                     (if (set-empty? graph)
+                         edges
+                         (let* ((vertex (caar graph))
+                                (neighbors (cdar graph))
+                                (vertex-edges (map (lambda (neighbor) (list vertex neighbor)) neighbors)))
+                           (helper (cdr graph) (append edges vertex-edges)))))))
+    (helper adjacency-list '())))
 
 
 
