@@ -34,6 +34,70 @@
 ; For an undirected graph (we will be implementing for this), the adjacency list will 
 ; have all the vertices that share an edge with a specific vertex. 
 
+(define (empty-graph)
+  '())
+
+(define (graph-empty? graph)
+  (null? graph))
+
+(define (add-vertex graph vertex)
+  (cons (list vertex '()) graph))
+
+(define (add-edge graph vertex1 vertex2)
+  (let* ((adjacency-list1 (find-vertex graph vertex1))
+         (updated-list1 (set-add (cdr adjacency-list1) vertex2))
+         (adjacency-list2 (find-vertex graph vertex2))
+         (updated-list2 (set-add (cdr adjacency-list2) vertex1))
+         (updated-graph (cons (list vertex1 updated-list1) (remove-vertex graph vertex1))))
+    (cons (list vertex2 updated-list2) updated-graph)))
+
+(define (remove-vertex graph vertex)
+  (cond ((null? graph) '())
+        ((equal? (caar graph) vertex) (remove-vertex (cdr graph) vertex))
+        (else (cons (car graph) (remove-vertex (cdr graph) vertex)))))
+
+(define (remove-edge graph vertex1 vertex2)
+  (let* ((adjacency-list1 (find-vertex graph vertex1))
+         (updated-list1 (set-remove (cdr adjacency-list1) vertex2))
+         (adjacency-list2 (find-vertex graph vertex2))
+         (updated-list2 (set-remove (cdr adjacency-list2) vertex1))
+         (updated-graph (cons (list vertex1 updated-list1) (remove-vertex graph vertex1))))
+    (cons (list vertex2 updated-list2) updated-graph)))
+
+(define (find-vertex graph vertex)
+  (cond ((null? graph) #f)
+        ((equal? (caar graph) vertex) (car graph))
+        (else (find-vertex (cdr graph) vertex))))
+
+(define (get-neighbors graph vertex)
+  (let ((adjacency-list (find-vertex graph vertex)))
+    (if adjacency-list
+        (cdr adjacency-list)
+        '())))
+
+(define (get-vertices graph)
+  (map car graph))
+
+(define (graph-size graph)
+  (length graph))
+
+(define (custom-filter pred lst)
+  (cond ((null? lst) '())
+        ((pred (car lst)) (cons (car lst) (custom-filter pred (cdr lst))))
+        (else (custom-filter pred (cdr lst)))))
+
+(define filter custom-filter)
+
+;; Test Code
+(define graph0 (empty-graph))
+(define graph1 (add-vertex graph0 'A))
+(define graph2 (add-vertex graph1 'B))
+(define graph3 (add-vertex graph2 'C))
+
+(define graph4 (add-edge graph3 'A 'B))
+(define graph5 (add-edge graph4 'A 'C))
+
+(define graph6 (get-vertices graph5))
 
 
 
