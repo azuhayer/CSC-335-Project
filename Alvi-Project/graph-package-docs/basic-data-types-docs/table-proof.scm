@@ -58,6 +58,7 @@
 ;     'update-value'     ;
 ; ---------------------- ;
 ; Precondition: The function will take a nonempty table, a row index, a column index and 
-; a new-value  
+; a new-value as parameters.  
 
-; Postcondition: 
+; Postcondition: Will return a table with the updated value at a specific row index and 
+; column index based on new-value. 
