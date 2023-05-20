@@ -4,6 +4,10 @@
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
+(load "basic-data-types/stack.scm")
+(load "basic-data-types/set.scm")
+(load "basic-data-types/queue.scm")
+
 ; ----- ABSTRACT -----
 ; A graph in computer programming represents a collection of interconnected nodes or commonly known as
 ; vertices, along with edges that connect these vertices together. 

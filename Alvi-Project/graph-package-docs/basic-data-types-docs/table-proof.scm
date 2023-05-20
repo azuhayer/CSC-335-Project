@@ -7,35 +7,36 @@
 ; ---------------------- ;
 ;      'make-table'      ;
 ; ---------------------- ;
-; Precondition: 
+; Precondition: No explicit precondition needed to create a table. 
 
-; Postcondition: 
+; Postcondition: Creating a new table will return an empty list: ().
 
 ; ---------------------- ;
 ;       'add-row'        ;
 ; ---------------------- ;
-; Precondition: 
+; Precondition: The function will take a table and an row as parameters. Both table and row
+; dont necessarily have to be empty. 
 
-; Postcondition: 
+; Postcondition: Will insert a new row to the table. 
 
 ; ---------------------- ;
 ;       'get-rows'       ;
 ; ---------------------- ;
-; Precondition: 
+; Precondition: The function will take a nonempty table as a parameter. 
 
-; Postcondition: 
+; Postcondition: Will return the number of rows within a table. 
 
 ; ---------------------- ;
 ;       'num-rows'       ;
 ; ---------------------- ;
-; Precondition: 
+; Precondition: The function will take a nonempty table as a parameter. 
 
-; Postcondition: 
+; Postcondition: Will return the number of column within a table. 
 
 ; ---------------------- ;
 ;       'get-row'        ;
 ; ---------------------- ;
-; Precondition: 
+; Precondition: The function will take a nonempty table and an index as a parameter. 
 
 ; Postcondition: 
 
