@@ -11,5 +11,5 @@
 
 ; ----- ABSTRACT -----
 ; BFS, or Breadth-First Search, is an algorithm used to traverse or explore a graph in a systematic way. 
-; It is particularly useful for graph-related problems where you want to visit all the vertices of the 
+; It is particularly useful for graph-related problems where one would want to visit all the vertices of the 
 ; graph or find the shortest path between two vertices.
