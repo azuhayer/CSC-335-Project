@@ -34,14 +34,30 @@
 ; For an undirected graph (we will be implementing for this), the adjacency list will 
 ; have all the vertices that share an edge with a specific vertex. 
 
+; ----- CODE -----
+; The empty-graph function is a simple function that returns an empty graph. In this 
+; implementation, a graph is represented as a list of vertices and their corresponding adjacency 
+; lists. An empty graph has no vertices, so the empty-graph function returns an empty list '(), 
+; indicating that there are no vertices or edges in the graph.
+
 (define (empty-graph)
   '())
+
+; The graph-empty? function is used to check whether a given graph is empty or not. It takes 
+; a graph as input and returns #t (true) if the graph is empty, and #f (false) otherwise.
 
 (define (graph-empty? graph)
   (null? graph))
 
+; The add-vertex function is used to add a new vertex to a graph. It takes an existing graph 
+; and a vertex as inputs and returns a new graph that includes the added vertex.
+
 (define (add-vertex graph vertex)
   (cons (list vertex '()) graph))
+
+; The add-edge function is used to add an edge between two vertices in a graph. It takes an 
+; existing graph, along with the two vertices that the edge connects, and returns a new 
+; graph with the edge added.
 
 (define (add-edge graph vertex1 vertex2)
   (let* ((adjacency-list1 (find-vertex graph vertex1))
@@ -51,10 +67,18 @@
          (updated-graph (cons (list vertex1 updated-list1) (remove-vertex graph vertex1))))
     (cons (list vertex2 updated-list2) updated-graph)))
 
+; The remove-vertex function is used to remove a vertex and its associated edges from a graph. 
+; It takes an existing graph and a vertex as inputs and returns a new graph with the specified 
+; vertex removed.
+
 (define (remove-vertex graph vertex)
   (cond ((null? graph) '())
         ((equal? (caar graph) vertex) (remove-vertex (cdr graph) vertex))
         (else (cons (car graph) (remove-vertex (cdr graph) vertex)))))
+
+; The remove-edge function is used to remove an edge between two vertices in a graph. It takes an 
+; existing graph, along with the two vertices that the edge connects, and returns a new graph 
+; with the edge removed.
 
 (define (remove-edge graph vertex1 vertex2)
   (let* ((adjacency-list1 (find-vertex graph vertex1))
@@ -64,10 +88,18 @@
          (updated-graph (cons (list vertex1 updated-list1) (remove-vertex graph vertex1))))
     (cons (list vertex2 updated-list2) updated-graph)))
 
+; The find-vertex function is used to search for a specific vertex in a graph. It takes an existing 
+; graph and a vertex as inputs and returns the adjacency list associated with that vertex if found, 
+; or #f (false) if the vertex is not present in the graph.
+
 (define (find-vertex graph vertex)
   (cond ((null? graph) #f)
         ((equal? (caar graph) vertex) (car graph))
         (else (find-vertex (cdr graph) vertex))))
+
+; The get-neighbors function is used to retrieve the neighbors (vertices connected by an edge) of a 
+; given vertex in a graph. It takes an existing graph and a vertex as inputs and returns a list 
+; of neighbors for that vertex.
 
 (define (get-neighbors graph vertex)
   (let ((adjacency-list (find-vertex graph vertex)))
@@ -96,8 +128,6 @@
 
 (define graph4 (add-edge graph3 'A 'B))
 (define graph5 (add-edge graph4 'A 'C))
-
-(define graph6 (get-vertices graph5))
 
 
 
