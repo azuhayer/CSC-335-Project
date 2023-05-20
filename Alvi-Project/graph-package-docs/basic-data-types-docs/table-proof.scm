@@ -11,6 +11,7 @@
 
 ; Postcondition: Creating a new table will return an empty list: ().
 
+
 ; ---------------------- ;
 ;       'add-row'        ;
 ; ---------------------- ;
@@ -19,12 +20,14 @@
 
 ; Postcondition: Will insert a new row to the table. 
 
+
 ; ---------------------- ;
 ;       'get-rows'       ;
 ; ---------------------- ;
 ; Precondition: The function will take a nonempty table as a parameter. 
 
 ; Postcondition: Will return the number of rows within a table. 
+
 
 ; ---------------------- ;
 ;       'num-rows'       ;
@@ -33,12 +36,14 @@
 
 ; Postcondition: Will return the number of column within a table. 
 
+
 ; ---------------------- ;
 ;       'get-row'        ;
 ; ---------------------- ;
 ; Precondition: The function will take a nonempty table and an index as parameters. 
 
 ; Postcondition: Will return the row of the table given the index for it. 
+
 
 ; ---------------------- ;
 ;      'add-column'      ;
@@ -47,12 +52,14 @@
 
 ; Postcondition: Will return a table with the added column into it. 
 
+
 ; ---------------------- ;
 ;      'get-column'      ;
 ; ---------------------- ;
 ; Precondition: The function will take a table and an index as parameters. 
  
 ; Postcondition: Will return a specific column of the table given an index.  
+
 
 ; ---------------------- ;
 ;     'update-value'     ;
