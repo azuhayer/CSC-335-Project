@@ -6,8 +6,8 @@
 
 ; Load queue.scm and graph.scm from basic-data-types folder
 ; This is necessary since BFS will require the queue data type and the graph implementations
-(load "basic-data-types/queue.scm")
-(load "basic-data-types/graph.scm")
+(load "../basic-data-types/queue.scm")
+(load "../basic-data-types/graph.scm")
 
 ; ----- ABSTRACT -----
 ; BFS, or Breadth-First Search, is an algorithm used to traverse or explore a graph in a systematic way. 
