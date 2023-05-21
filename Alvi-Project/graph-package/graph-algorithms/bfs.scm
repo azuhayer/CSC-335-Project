@@ -23,3 +23,33 @@
 ; algorithm enqueues the source vertex, then repeatedly dequeues a vertex from the front of the queue, 
 ; visits it, and enqueues its unvisited neighbors. This ensures that the vertices are visited in the order 
 ; they were encountered, following the breadth-first order.
+
+; ----- CODE -----
+
+(define (bfs graph start-vertex)
+  (define (bfs-helper queue visited)
+    (if (empty? queue)
+        (reverse visited)
+        (let ((current-vertex (front queue))
+              (new-queue (dequeue queue)))
+          (if (member current-vertex visited)
+              (bfs-helper new-queue visited)
+              (let* ((neighbors (get-neighbors graph current-vertex))
+                     (unvisited-neighbors (unvisited neighbors visited))
+                     (updated-visited (append unvisited-neighbors visited))
+                     (updated-queue (enqueue-multiple new-queue unvisited-neighbors)))
+                (bfs-helper updated-queue updated-visited))))))
+
+  (bfs-helper (enqueue (make-queue) start-vertex) '()))
+
+(define (unvisited vertices visited)
+  (cond ((empty? vertices) '())
+        ((member (car vertices) visited)
+         (unvisited (cdr vertices) visited))
+        (else (cons (car vertices) (unvisited (cdr vertices) visited)))))
+
+(define (enqueue-multiple queue elements)
+  (if (empty? elements)
+      queue
+      (enqueue-multiple (enqueue queue (car elements)) (cdr elements))))
+
