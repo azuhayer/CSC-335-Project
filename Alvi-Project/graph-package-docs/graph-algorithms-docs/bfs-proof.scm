@@ -37,3 +37,7 @@
 ;   8. By recursively calling the BFS algorithm with the updated queue and visited list, the algorithm continues 
 ;      the breadth-first traversal of the graph, preserving the correctness property.
 
+; Base Case: When the queue is empty, the BFS algorithm returns the reverse of the visited list.
+; If there are no vertices in the graph other than the start vertex, the algorithm will visit only 
+; the start vertex and return it as the result. Therefore, the base case holds. 
+
