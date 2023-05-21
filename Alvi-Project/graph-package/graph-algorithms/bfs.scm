@@ -39,7 +39,6 @@
                      (updated-visited (append unvisited-neighbors visited))
                      (updated-queue (enqueue-multiple new-queue unvisited-neighbors)))
                 (bfs-helper updated-queue updated-visited))))))
-
   (bfs-helper (enqueue (make-queue) start-vertex) '()))
 
 (define (unvisited vertices visited)
